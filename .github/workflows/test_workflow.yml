@@ -1,0 +1,13 @@
+name: Hello Workflows
+
+on:
+    push:
+
+jobs:
+    Say_Hello:
+        runs-on: ubuntu-latest
+        
+        steps:
+        - name: execute echo
+          run: echo 'hello world'
+
