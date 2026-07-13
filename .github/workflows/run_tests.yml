@@ -8,6 +8,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+              
             - name: build the test image
               run: docker build -t test_calculator .
 
